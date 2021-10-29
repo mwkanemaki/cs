@@ -1,6 +1,64 @@
 
 
 
+           if (BitTestS_Byte(The_Rx_ByteData[5], 0))
+            {
+                label_TRIGGER_SW.ForeColor = Color.Red;
+
+            }
+            else
+            {
+                label_TRIGGER_SW.ForeColor = Color.Green;
+            }
+
+////////////////////////////////////////////
+        void Proc_UP_POT()
+        {
+            progressBar_Y_P_POT.Value = The_Rx_ByteData[0];
+            label_VAL_Y_P_POT.Text = The_Rx_ByteData[0].ToString();
+
+            progressBar_Y_N_POT.Value = The_Rx_ByteData[1];
+            label_VAL_Y_N_POT.Text = The_Rx_ByteData[1].ToString();
+
+            progressBar_X_P_POT.Value = The_Rx_ByteData[2];
+            label_VAL_X_P_POT.Text = The_Rx_ByteData[2].ToString();
+
+            progressBar_X_N_POT.Value = The_Rx_ByteData[3];
+            label_VAL_X_N_POT.Text = The_Rx_ByteData[3].ToString();
+
+
+        }
+
+////////////////////////////////////////////
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
